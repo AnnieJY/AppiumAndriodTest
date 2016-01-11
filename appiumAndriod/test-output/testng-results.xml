@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="69228" started-at="2016-01-07T08:43:12Z" finished-at="2016-01-07T08:44:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="69228" started-at="2016-01-07T08:43:12Z" finished-at="2016-01-07T08:44:21Z">
+      <class name="com.annie.test.andriod.AndroidContactsTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.annie.test.andriod.AndroidContactsTest@4b416926]" name="setUp" is-config="true" duration-ms="24304" started-at="2016-01-07T16:43:12Z" finished-at="2016-01-07T16:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addContact()[pri:0, instance:com.annie.test.andriod.AndroidContactsTest@4b416926]" name="addContact" duration-ms="40774" started-at="2016-01-07T16:43:36Z" finished-at="2016-01-07T16:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.annie.test.andriod.AndroidContactsTest@4b416926]" name="tearDown" is-config="true" duration-ms="4140" started-at="2016-01-07T16:44:17Z" finished-at="2016-01-07T16:44:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.annie.test.andriod.AndroidContactsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

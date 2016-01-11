@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+<!-- 构件的标识符，它和group ID一起唯一标识一个构件。换句话说，你不能有两个不同的项目拥有同样的artifact ID和groupID；在某个特定的group ID下，artifact ID也必须是唯一的。构件是项目产生的或使用的一个东西，Maven为项目产生的构件包括：JARs，源码，二进制发布和WARs等。 --> 
+
+	<groupId>io.appium</groupId>
+	<artifactId>java-client</artifactId>
+	<version>3.1.0</version>
+	
+	<!-- POM的基础是它的依赖列表。大多数情况下，每个工程都要依赖于其他的资源的正确编译和运行，那么如果Maven为你管理了这个列表，你就会获益匪浅。Maven在编译时，会下载和连接它们所需的所有依赖，包括依赖中的依赖（即所谓的依赖传递），这中特性让你只需关注自己工程中的依赖。 -->
+	<dependencies>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<scope>test</scope>
+			<version>2.46.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+	
+
+<!-- packaging项目产生的构件类型，例如jar、war、ear、pom.插件可以创建他们自己的构件类型，所以前面列的不是全部构件类型 --> 
+<!-- 项目主页的URL, Maven产生的文档用 --> 
+<!-- 项目的详细描述, Maven 产生的文档用。 当这个元素能够用HTML格式描述时（例如，CDATA中的文本会被解析器忽略，就可以包含HTML标签）， 不鼓励使用纯文本描述。如果你需要修改产生的web站点的索引页面，你应该修改你自己的索引页文件，而不是调整这里的文档。 --> 
+	
+ <packaging>jar</packaging>
+	<name>java-client</name>
+	<description>Java client for Appium Mobile Webdriver</description>
+	<url>http://appium.io</url>
+
+	
+
+
+<!-- SCM(Source Control Management)标签允许你配置你的代码库，供Maven web站点和其它插件使用。 --> 
+	<scm>
+		<url>https://github.com/appium/java-client</url>
+		<connection>scm:git:git://github.com/appium/java-client.git</connection>
+		<developerConnection>scm:git:git@github.com:appium/java-client.git</developerConnection>
+	</scm>
+
+</project>
